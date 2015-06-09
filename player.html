@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="layout.css">
+<link type="text/css" href="layout.css">
+<link rel="stylesheet" type="text/css" href="csshake.min.css">
+<link type="text/css" href="csshake.min.css">
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.2/jquery.mobile.min.css">
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<audio id="video" autoplay>
+<source id="01" src="01.mp3" type="audio/mpeg">
+</audio>
+
+<title>Platyer</title>
+<script>
+function a1(n)
+  {
+	  var ma1 = document.getElementById(n);
+	  ma1.width = 30;
+	  ma1.height = 30;
+
+  }
+  
+  function a2(n)
+  {
+	  var ma1 = document.getElementById(n);
+	  ma1.width = 25;
+	  ma1.height = 25;
+	  
+  }
+	
+	function a3(n)
+  {
+	  location.href= n;
+	  
+  }
+  
+  function a4(n)
+  {
+	  	
+	  		var ma1 = document.getElementById(n);
+			ma1.width = ma1.width*2;
+	  		ma1.height = ma1.height*2;
+		
+  }
+  
+  function a5(n)
+  {
+	  
+	  var ma1 = document.getElementById(n);
+	  ma1.width = ma1.width/2;;
+	  ma1.height = ma1.height/2;
+	  
+	  
+  }
+	
+	function a6(n)
+  {
+	  location.href= n;
+	  
+  }
+		
+	var n = 0;
+	
+	function playPause() 
+	{  
+    if (video.paused) 
+        video.play(); 
+    else 
+        video.pause(); 
+	} 
+
+	function Next() 
+	{  
+	     if(n == 0)
+		 {
+		 document.getElementById("01").src = "02.mp3";
+		 document.getElementById("video").load();
+		 n++;
+		 }
+		 else if(n == 1)
+		 {
+		 document.getElementById("01").src = "03.mp3";
+		 document.getElementById("video").load();
+		 n++;
+		 }
+		 else if(n == 2)
+		 {
+		 document.getElementById("01").src = "04.mp3";
+		 document.getElementById("video").load();
+		 n++;
+		 }
+		 else if(n == 3)
+		 {
+		 document.getElementById("01").src = "05.mp3";
+		 document.getElementById("video").load();
+		 n++;
+		 }
+		 else
+		 {   
+		     document.getElementById("01").src = "01.mp3";
+			 document.getElementById("video").load();
+			 n = 0;
+			 }
+		 
+		 
+	}
+	
+	function Pre() 
+	{  
+	     if(n == 0)
+		 {
+		 document.getElementById("01").src = "05.mp3";
+		 document.getElementById("video").load();
+		 n++;
+		 }
+		 else if(n == 1)
+		 {
+		 document.getElementById("01").src = "04.mp3";
+		 document.getElementById("video").load();
+		 n++;
+		 }
+		 else if(n == 2)
+		 {
+		 document.getElementById("01").src = "03.mp3";
+		 document.getElementById("video").load();
+		 n++;
+		 }
+		 else if(n == 3)
+		 {
+		 document.getElementById("01").src = "02.mp3";
+		 document.getElementById("video").load();
+		 n++;
+		 }
+		 else
+		 {   
+		     document.getElementById("01").src = "01.mp3";
+			 document.getElementById("video").load();
+			 n = 0;
+			 }
+		 
+		 
+	} 
+
+	function Slow() 
+	{ 
+    myVideo.playbackRate = 0.5; 
+	} 
+
+	function Normal() 
+	{ 
+    myVideo.playbackRate = 1.0; 
+	} 
+
+</script>
+
+
+</head>
+
+<body>
+<script type="text/javascript">
+//页面淡入淡出
+$(document).ready(function() {
+$('body').hide().fadeIn(1500);
+});
+</script>
+
+
+<div align="center">
+<table> <tr> 
+<td style="width:360px;height:480px;background-image:url('back.png');">
+
+<div id="cover" class="BOX">
+
+<img src="cover.png" width="240" height="300" >
+</div>
+
+
+<table class="Control"><td width="33">
+<img id="m1" src="loop.png" width="25" height="25" onmouseover="a1('m1')" onmouseout="a2('m1')" >
+</td>
+
+<td width="37">
+<img id ="m2" src="next.png" width="25" height="25" onmouseover="a1('m2')" onmouseout="a2('m2')" onclick="Pre()">
+</td>
+
+<td width="35">
+<img id ="m3" src="play.png" width="25" height="25" onmouseover="a1('m3')" onmouseout="a2('m3')" onclick="playPause()" >
+</td>
+
+<td width="35">
+<img id ="m4" src="pre.png" width="25" height="25" onmouseover="a1('m4')" onmouseout="a2('m4')" onclick="Next()">
+</td>
+
+<td width="35">
+<img id ="m5" src="note.png" width="25" height="25" onmouseover="a1('m5')" onmouseout="a2('m5')">
+</td>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+<table class="Select"><td width="65">
+<div class="preview-item shake">
+<img id="m7" src="playero.jpg" width="30" height="30">
+</div>
+</td>
+
+<td width="72">
+<div class="preview-item shake">
+<img id ="m8" src="taiwan.jpg" width="25" height="35" onclick="a3('map.html')" >
+</div>
+</td>
+
+<td width="68">
+<div class="preview-item shake">
+<img id ="m9" src="love1.png" width="30" height="30" onclick="a3('share.html')" >
+</div>
+</td>
+
+<td width="65">
+<div class="preview-item shake">
+<img id ="m10" src="share.jpg" width="30" height="30">
+</div>
+</td>
+
+<td width="66">
+<div class="preview-item shake">
+<img id ="m11" src="local.jpg" width="30" height="30" >
+</div>
+</td>
+</table>
+
+</td></tr></table>
+
+<div class="Back">
+<a href="index.html"><img id ="m6" src="backindex.png" width="25" height="25" onmouseover="a1('m6')" onmouseout="a2('m6')"></img></a>
+</div>
+
+<table class="Social"><td width="305">
+<div class="preview-item shake">
+<img id="m12" src="social.png" width="30" height="30">
+</div>
+</td>
+
+<td width="43">
+<div class="preview-item shake">
+<img id ="m13" src="write.png" width="25" height="35">
+</div>
+</td>
+</table>
+
+</body>
+</html>

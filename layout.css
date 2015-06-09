@@ -1,0 +1,118 @@
+body {
+	background-color: #EEE;
+}
+
+.BOX {
+	width: 240px;
+	height: 300px;
+	
+	position:absolute;
+	left:50%;
+	top:30%;
+	
+	margin-top:-150px;
+	margin-left:-120px;
+}
+
+.Control {
+	width: 300px;
+	height: 300px;
+	position:absolute;
+	left:700px;
+	top:400px;
+	margin-top:-150px;
+	margin-left:-150px;
+}
+
+.Back {
+	width: 10px;
+	height: 20px;
+	
+	position:absolute;
+	left:38%;
+	top:35%;
+	
+	margin-top:-5px;
+	margin-left:-10px;
+}
+
+.Select {
+	width: 360px;
+	height: 70px;
+	position:absolute;
+	left:670px;
+	top:578px;
+	margin-top:-150px;
+	margin-left:-150px;
+}
+.Select1 {
+	width: 360px;
+	height: 90px;
+	position:absolute;
+	left:700px;
+	top:456px;
+	margin-top:-45px;
+	margin-left:-180px;
+}
+
+.Social {
+	width: 360px;
+	height: 30px;
+	position:absolute;
+	left:525px;
+	top:201px;
+	margin-top:-180px;
+	margin-left:-15px;
+}
+
+.Build {
+	width: 20px;
+	height: 90px;
+	position:absolute;
+	left:783px;
+	top:73px;
+	margin-top:-45px;
+	margin-left:-10px;
+}
+.DA {
+	width: 700px;
+	height: 700px;
+	position:absolute;
+	left:960px;
+	top:675px;
+	margin-top:-350px;
+	margin-left:-350px;
+}
+
+a img {
+	border: none;
+}
+#abgne_fade_pic {
+	position: relative;
+	width: 240px;
+	height: 300px;
+	
+}
+#abgne_fade_pic a.ad {
+	position: absolute;	/* 讓圖片疊在一起 */
+}
+#abgne_fade_pic .control {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+#abgne_fade_pic .control a {
+	display: inline-block;
+	padding: 3px;
+	margin: 0 3px;
+	width: 16px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+}
+#abgne_fade_pic .control a.on {
+	font-weight: bold;
+	color: #f00;
+}
